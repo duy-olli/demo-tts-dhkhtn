@@ -31,12 +31,4 @@ $(document).ready(function() {
 
         return getTTS(text);
     });
-
-    $('.keyword').keypress(function (e) {
-        if (e.which == 13) {
-            var text = $('.keyword').val();
-
-            return getTTS(text);
-        }
-    });
 });
