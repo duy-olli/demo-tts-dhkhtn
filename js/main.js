@@ -19,7 +19,6 @@ function getTTS(text) {
         },
         complete: function() {
             $('.loading').hide();
-            $('.keyword').val('');
         }
     });
 }
@@ -36,7 +35,7 @@ $(document).ready(function() {
     $('.keyword').keypress(function (e) {
         if (e.which == 13) {
             var text = $('.keyword').val();
-            
+
             return getTTS(text);
         }
     });
